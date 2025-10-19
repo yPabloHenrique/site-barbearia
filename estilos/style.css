@@ -262,7 +262,7 @@ nav > a {
     border-bottom: 2px rgb(49, 20, 0) solid;
 }
 .avaliacao {
-    background-color: rgb(255, 245, 191);
+    background-color: rgb(255, 251, 231);
     padding: 30px 0px;
     text-align: center;
 }
@@ -299,7 +299,7 @@ nav > a {
     margin: 0 auto;
 }
 footer {
-    background-color: rgb(58, 27, 27);
+    background-color: rgb(17, 9, 9);
     color: white;
     padding: 50px 20px;
 }
@@ -320,7 +320,7 @@ footer {
     font-size: 2.3em;
 }
 .box-footer > p {
-    color: rgb(245, 72, 72);
+    color: rgb(255, 144, 144);
     font-size: 1em;
     padding: 20px 0px;
     font-weight: 300;
@@ -329,7 +329,7 @@ footer {
 .box-footer > a {
     padding: 10px 0px;
     text-decoration: none;
-    color: rgb(245, 72, 72);
+    color: rgb(255, 144, 144);
 }
 .box-footer > a:hover {
     margin-left: 10px;
@@ -344,7 +344,7 @@ footer {
 .rs > a {
     flex-direction: row;
     font-size: 1.5em;
-    color: rgb(245, 72, 72);
+    color: rgb(255, 144, 144);
 }
 .rs > a:hover {
     color: rgb(255, 178, 127);
@@ -353,7 +353,7 @@ footer {
 .dev-credits {
     padding: 15px;
     border-top: 2px rgb(252, 134, 134) solid;
-    background-color: rgb(58, 27, 27);
+    background-color: rgb(17, 9, 9);
     color: rgba(255, 255, 255, 0.589);
     font-size: 0.8em;
 }
