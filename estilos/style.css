@@ -214,6 +214,7 @@ nav > a {
 .planos {
     background-image: url(../imagens/jovem-na-barbearia-aparando-cabelo-mobile.webp);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     height: 100%;
 }
