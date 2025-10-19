@@ -1,0 +1,20 @@
+@media screen and (min-width: 768px) {
+     html {
+        font-size: clamp(0.9rem, 1.6vw, 1.05rem);
+    }
+    .nav {
+        justify-content: space-between;
+    }
+    nav {
+        display: block;
+    }
+    .services-box {
+        max-width: 300px;
+    }
+    .services-box > img {
+        max-width: 300px;
+    }
+    .services-pai {
+        margin: 0 auto;
+    }
+}

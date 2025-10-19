@@ -1,0 +1,370 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1 {
+    color: rgb(255, 178, 127);
+    font-size: 3em;
+    font-family: "Playfair Display";
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 2.5em;
+}
+p {
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+a {
+    font-family: "Lato";
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    line-height: 28px;
+    font-size: 1.1em;
+}
+header {
+    background-color: rgb(17, 13, 10);
+}
+nav {
+    display: none;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 178, 127);
+}
+.banner {
+    height: 600px;
+    background-image: url(../imagens/mesa-de-cafe-de-luxo-dentro-bar-barista-gerada-por-ia.webp);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+.banner-container {
+    background-color: rgba(0, 0, 0, 0.596);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.box-banner {
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 30px;
+}
+.box-banner > span {
+    color: rgb(255, 178, 127);
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, rgb(58, 27, 27), rgb(124, 101, 86));
+    font-family: "Lato";
+}
+.box-banner > span > i {
+    margin-right: 10px;
+}
+.box-banner > h1 {
+    margin-top: 20px;
+    color: rgb(255, 178, 127);
+    font-size: 3em;
+}
+.box-banner > p {
+    margin: 30px 0px;
+    font-weight: 300;
+    font-size: 1.2em;
+}
+.box-banner > a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 25px;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, rgb(58, 27, 27), rgba(255, 177, 146, 0.664));
+    color: white;
+}
+.box-banner > a:hover {
+    background-image: linear-gradient(45deg, rgb(58, 27, 27), rgba(255, 177, 146));
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.about-us {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(58, 27, 27);
+    height: 700px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.box-text-about {
+    color: white;
+    max-width: 650px;
+}
+.box-text-about > h2 {
+    font-size: 3.5em;
+    color: rgb(255, 178, 127);
+    padding: 20px 0px;
+    font-family: "Playfair Display";
+    letter-spacing: 3px;
+    position: relative;
+}
+.box-text-about > h2:before {
+    content: "";
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    top: 90px;
+    display: block;
+    background-image: linear-gradient(90deg, rgb(58, 27, 27), rgba(255, 177, 146, 0.664));
+    border-radius: 20px;
+}
+.box-text-about > p {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 28px;
+}
+.img-about img{
+    max-width: 500px;
+    border-radius: 30px;
+    width: 100%;
+}
+.img-about img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.services-banner {
+    background-image: url(../imagens/ferramentas-para-profissao-de-cabeleireiro.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.services {
+    background-color: rgba(0, 0, 0, 0.596);
+    background-size: cover;
+    background-position: top;
+    text-align: center;
+    padding: 60px 0px;
+}
+.services > h1 {
+    color: rgb(255, 178, 127);
+    padding: 30px 0px;
+}
+.services > h2 {
+    font-family: "Montserrat";
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    color: rgb(255, 147, 75);
+}
+.services > p {
+    text-align: center;
+}
+.services-pai {
+    display: flex;
+    gap: 80px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services-box {
+    max-width: 400px;
+    text-align: center;
+}
+.services-box:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.services-box > h2 {
+    font-family: "Playfair Display";
+    letter-spacing: 2px;
+    color: rgb(255, 178, 127);
+}
+.services-box > img {
+    max-width: 220px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.services-box > h2, p {
+    max-width: 350px;
+}
+.services-box > p {
+    font-size: 1em;
+    color: white;
+}
+.planos {
+    background-image: url(../imagens/jovem-na-barbearia-aparando-cabelo.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+.planos h1 {
+    text-align: center;
+    padding: 40px 0px;
+}
+.planos h2 {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 30px 0px;
+    color: rgb(255, 147, 75);
+}
+.planos-banner {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.753);
+}
+.planos-pai {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    margin: 0 auto;
+}
+.planos-box {
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.767);
+}
+.planos-box h2 {
+    font-family: "Lato";
+    font-weight: 400;
+}
+.planos-box h3 {
+    font-family: "Lato";
+    color: rgb(255, 147, 75);
+    text-align: center;
+    padding-bottom: 20px;
+}
+.planos-box p {
+    color: rgb(255, 147, 75);
+    padding: 20px 0px;
+    border-bottom: 2px rgb(49, 20, 0) solid;
+}
+.avaliacao {
+    background-color: rgb(255, 245, 191);
+    padding: 30px 0px;
+    text-align: center;
+}
+.avaliacao h1 {
+    color:rgb(255, 147, 75);
+    padding: 40px 0px 30px 0px;
+}
+.avaliacao h2 {
+    font-family: "Montserrat";
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.avaliacao-pai {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+.avaliacao-box {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.avaliacao-box > h2 {
+    font-family: "Playfair Display";
+    font-weight: 600;
+    font-size: 1.8em;
+    padding: 10px 0px;
+    color: rgb(255, 147, 75);
+}
+.avaliacao-box > img {
+    width: 100px;
+    margin: 0 auto;
+}
+footer {
+    background-color: rgb(58, 27, 27);
+    color: white;
+    padding: 50px 20px;
+}
+.footer-pai {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+}
+.box-footer > h1 {
+    color: rgb(255, 178, 127);
+    font-size: 2.3em;
+}
+.box-footer > p {
+    color: rgb(245, 72, 72);
+    font-size: 1em;
+    padding: 20px 0px;
+    font-weight: 300;
+    line-height: 25px;
+}
+.box-footer > a {
+    padding: 10px 0px;
+    text-decoration: none;
+    color: rgb(245, 72, 72);
+}
+.box-footer > a:hover {
+    margin-left: 10px;
+    transition: 0.5s ease-in-out;
+    color: rgb(255, 178, 127);;
+}
+.rs {
+    display: flex;
+    gap: 30px;
+    margin: 10px 0px;
+}
+.rs > a {
+    flex-direction: row;
+    font-size: 1.5em;
+    color: rgb(245, 72, 72);
+}
+.rs > a:hover {
+    color: rgb(255, 178, 127);
+    transition: 0.5s ease-in-out;
+}
+.dev-credits {
+    padding: 15px;
+    border-top: 2px rgb(252, 134, 134) solid;
+    background-color: rgb(58, 27, 27);
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 0.8em;
+}
+.dev-credits > p {
+    font-weight: 600;
+    color: rgb(255, 178, 127);
+    margin: 0 auto;
+    text-align: center;
+}
+.dev-credits > p > a {
+    text-decoration: none;
+    color: rgb(245, 72, 72);
+    font-weight: 600;
+}
