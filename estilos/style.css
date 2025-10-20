@@ -47,9 +47,28 @@ nav {
     margin: 0 auto;
 }
 nav > a {
+    position: relative;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
     text-decoration: none;
-    padding: 10px;
-    color: rgb(255, 178, 127);
+    font-weight: 300;
+    color: rgb(255, 186, 139);
+}
+nav > a::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(90deg, rgb(58, 27, 27), rgb(124, 101, 86));
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+nav > a:hover::after {
+    width: 100%;
 }
 .banner {
     height: 600px;
